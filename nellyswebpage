@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Nelly's WebPage</title>  
+        <title>Nelly Rose Aporado</title>
+          <link href="social-buttons.css" rel="stylesheet">
+          <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:300' rel='stylesheet' type='text/css'>
+          <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">  
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <style type="text/css">
+            html, body{
+                margin:0;
+                padding:0;
+            }
+            .container{
+                max-width: 940px;
+                margin:0 auto;
+                padding:0 10px;
+            }
+            .jumbotron{
+                background: url(https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-9/17265031_1261719100584689_8163679495369743488_n.jpg?oh=c47391aa7bfea32268c70373f9fbf763&oe=592E6C90) no-repeat center center;
+                background-size: cover;
+                width: 100%;
+                height: 800px;
+                
+            }
+            .header{
+                background-color: #333;
+                /*background-color:/*#B8B709;*//*rgb(224, 102, 102);*//*rgb(232, 99, 78); /*
+                /*opacity: 0.8;*/
+                left: 0;
+                top: 0;
+                width: 100%;
+                position: fixed;
+                z-index: 1;
+                overflow:hidden;                
+            }
+            .nav{
+                list-style-type: none;
+                margin:0px;
+                padding: 15px 0;
+                text-align: right;
+            }
+            .nav li{
+                display: inline;
+                font-family: 'Montserrat' 'Raleway', Sans-serif;
+                font-weight: 600px;
+                font-size: 15px;
+                padding: 20px;
+                text-transform: uppercase;
+                /*border:1px solid #EEEDED;*/
+            }
+            .nav li a{
+                text-decoration: none;
+                /*color: #EEEDED;*/
+                color: #fff;
+                
+            }
+            .nav li:hover{
+                background-color:rgba(115, 140,150, 0.5);
+            }
+            .main{
+                position: absolute;
+                top: 530px;
+                float: left;
+            }
+            .main h1{
+                color: rgb(232, 99, 78);
+                font-family: 'Josefin Slab' 'Raleway', Sans-serif;
+                font-weight: 250;
+                font-size: 25px;
+                text-transform: uppercase;
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+            }
+             .main h1 span{
+                font-size: 15px;
+                font-family: 'Josefin Slab''Raleway';
+                color: rgb(232, 99, 78);
+                margin-left: 27px;
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+            }
+            hr{
+                border:solid 2px #ccff33;
+            }
+           
+            .hr-sect {
+                display: flex;
+                flex-basis: 100%;
+                align-items: center;
+                color:  rgb(232, 99, 78);
+                font-size: 25px;
+                margin: 10px 0px;
+                text-transform: uppercase;
+                padding-bottom:20px;
+             }
+            .hr-sect::before,
+            .hr-sect::after {
+                    content: "";
+                    flex-grow: 1;
+                    background: #999999;
+                    height: 3px;
+                    font-size: 20px;
+                    line-height: 0px;
+                    margin: 0px 16px;
+                }
+            
+            span{
+                color: rgb(232, 99, 78);
+            }
+
+            .supporting{
+                background-color: #F0F0F0;
+                font-weight: 250;
+                color:  rgb(232, 99, 78);
+                padding-top: 40px;
+                padding-bottom: 100px;
+                font-weight: 600;
+                margin-bottom: : 15px;
+            }
+            #portfolio{
+                background-color:#F0F0F0;
+                /*background: url(http://www.webdesigndev.com/businesslayout/pattern-blended.jpg) no-repeat center center;
+                background-size: cover;*/
+
+                
+            }
+            #about{
+                background: url(http://www.designbolts.com/wp-content/uploads/2012/12/Subtle-Grey-Tileable-Pattern-For-Website-Background.jpg) no-repeat center center;
+                background-size: cover;     
+                
+        }
+        
+             .btn-main {
+                  background-color: rgb(232, 99, 78);
+                  color: #fff;
+                  font-family: 'Josefin Slab''Raleway', sans-serif;
+                  font-weight: 600;
+                  font-size: 10px;
+                  letter-spacing: 1.3px;
+                  padding: 10px 25px;
+                  text-decoration: none;
+                  text-transform: uppercase;
+                  margin-left:10px;
+                }
+            .supporting .col{
+                float:left;
+                width: 33%;
+                font-family: 'Josefin Slab''Raleway', Sans-serif;
+                text-align: center;
+            }
+           .supporting img{
+                height: 278px;
+                width: 305px;
+                object-fit: cover;
+                border: 1px solid rgb(232, 99, 78);
+                border-radius: 50%;
+            }        
+            .supporting h3{
+                font-weight: 500;
+                font-size: 18px;
+                
+            }
+            .supporting p{
+                font-family: 'Josefin Slab''Raleway', Sans-serif;
+                font-weight: 550;
+                font-size: 14px;
+                line-height: 30px;
+                padding: 0 15px;
+                margin-bottom: 40px;
+            } 
+            p{
+                font-weight: 500;
+                font-size: 18px;
+                 line-height: 30px;
+                 padding: 0 20px;
+                font-family: 'Raleway', Sans-serif;
+                text-align: center;
+            }
+            .btn-default {
+                 background: rgb(204, 0, 0);
+                  font-family: 'Josefin Slab''Raleway', sans-serif;
+                  font-weight: 600;
+                  font-size: 12px;
+                  letter-spacing: 1.1px;
+                  color: rgb(255, 255, 255);
+                  padding: 10px 20px;
+                  text-decoration: none;
+                  text-transform: uppercase;  
+                  display: inline-block;
+                  margin-top: 50px;      
+                  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+                  vertical-align: middle;
+                  line-height: 1.42857143;
+             }
+                .btn-default:hover{
+                background-color:rgb(160,0,0);
+                
+             }
+             .contact-form{
+                background: url(http://www.studiofeixen.ch/wp-content/uploads/2017/01/flower-rain.gif) no-repeat center center;
+                color: rgb(232, 99, 78);
+                padding-top: 20px;
+                padding-bottom: 100px;
+                background-size: cover;
+                width: 100%;
+                height: 300px;                             
+             }
+             #whitey{
+                padding-top: 15px;
+                color:rgb(248,248,248);
+             }
+             label{
+                float:left;
+                width: 150px;
+                text-align: right;
+                padding-right: 12px;
+                margin-top: 12px;
+                font-weight: 500;
+                font-size: 17px;
+                clear: left;
+                color:rgb(248,248,248);
+                padding: 0 40px;
+                font-family: 'Abel', sans-serif;
+             }
+             #write{
+                color:white;
+                font-family: 'Abel', sans-serif;
+                font-weight: 300;
+                font-size: 15px;
+                color:rgb(248,248,248);
+             }
+             input, textarea{
+                margin-top: 12px;
+             }
+             #simpleform{
+                background-color: rgba(56,56,56,0.5);
+                border:1px solid #909090;
+                border-radius: 5px;
+                width: 100%;
+             }
+             #theSubmit{
+                margin-left: 219px;
+                padding: 10px;
+             }
+                .clearfix{
+                    clear: both; 
+                }
+
+                .fa {
+                  display: inline-block;
+                  margin-top: 7px;
+                  font-size: 20px;
+                  width: 20px;
+                  text-align: center;
+                  text-decoration: none;
+                  float: right;
+                  margin-right:10px;
+                  border-radius:2px;
+                }
+                .fa:hover {
+                     opacity: 0.9;
+                    }
+
+                    .fa-facebook {
+                      background: #3B5998;
+                      color: white;
+                    }
+
+                    .fa-twitter {
+                      background: #55ACEE;
+                      color: white;
+                    }
+                    .fa-linkedin {
+                      background: #007bb5;
+                      color: white;
+                    }
+                    .fa-github{
+                    background: #007bb5;
+                      color: black;
+                    }
+                    .fa-gitlab{
+                        background: #ff8000;
+                      color: white;
+                    }
+                  .fa-bitbucket{
+                        background: #007bb5;
+                      color: white;
+                    }
+                    .fa-codepen{
+                        background: #007bb5;
+                      color: white;
+                    }
+                footer {
+                  color: #fff;
+                  clear: both;
+                }
+
+            .footer p {
+              font-family: 'Josefin Slab', sans-serif;
+              text-transform: uppercase;
+              font-size: 10px;
+              text-align: center;
+            }
+           
+           
+        </style>
+    </head>
+
+<!-- ========================= end of head =========================-->
+
+    <body>
+        <div class ="header">
+            <div class = "container">
+                <ul class ="nav">
+            <li> <a href = "#">Home</a></li>
+            <li><a href = "#about">About</a></li>
+            <li><a href = "#portfolio">Portfolio</a></li>
+            <li><a href = "#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+<!-- ========================= end of navBar =========================-->
+
+            <div class = "jumbotron">
+                <div class = "container">
+                
+                        <div class ="main">
+                       <hr /><h1>Nelly rose aporado
+                        <br/><span> Full Stack Web Developer</span></h1><hr />
+                        <p>
+                    </div>
+                </div>
+            </div>
+
+        
+<!-- ======================= end of homepage =========================-->
+
+       <div class = "supporting" id = "about">
+            <div class = "container">
+
+                <h2 class="hr-sect">ABOUT</h2><br />
+
+                <!--<a class = "btn-main" href = "#">Download My CV</a>-->
+
+                <div class = "col">
+                    <!--<img src ="https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-9/15826531_1201205996636000_1352879639044307202_n.jpg?oh=160430f4122f122f05faaf7be5e836ac&oe=59260FA7"> -->
+                    <h3> ABOUT ME</h3><br />
+                    <hr width="50" noshade> <p>Hi, I'm <em><strong>Nelly</strong></em>! I am a self-taught Web Developer. A proud and full time mom of my son - <em><strong>Shane.</strong></em>. I love coding, it makes me think. Coding is Life! <br /></strong>Think. Create. Transform.</strong><hr width="50" noshade></p>
+                </div>
+
+                
+                <div class = "col">
+                    <h3> WHAT I'VE DONE</h3><br />
+                        <hr width="50" noshade><p>I have made a simple webpages. It is a combination of an online store, & a blog. Hoping to make it more interactive and hopefully, it'll be published soon! I also worked for different industry like BPO.<hr width="50" noshade></p>
+                </div>
+
+
+                <div class = "col">
+                    <h3>WHAT I DO</h3><br />
+                      <hr width="50" noshade>  <p>I am a member of Women Who Code Manila community. I joined to develop and harness my coding skills. I am also working as a Freelance Virtual Assistant/Sourcing Specialist. <hr width="50" noshade></p>
+                </div> 
+          
+         </div>
+               <div class="clearfix"></div>
+        </div> 
+
+<!-- ======================= end of homepage ========================= -->
+
+    <div class = "supporting" id = "portfolio">
+            <div class = "container">
+
+             <h2 class="hr-sect">Portfolio</h2> <br /><br /> <br />
+
+                <div class = "col">
+                    <img src = "https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-9/17202985_1261212060635393_8395175943990490536_n.jpg?oh=29ba7220b70f5a6642edd6ff975c40da&oe=59677529"/>
+                 
+                    <a class = "btn-default" href = "file:///C:/Users/Rose/Documents/Web%20Designs/homeforcool.html" target="_blank">Learn More  </a>
+                </div>
+
+                 <div class = "col">
+                    <img src = "https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-9/17203119_1261212067302059_8303489197135779798_n.jpg?oh=2d6332e82c63d02922e3b92e93398f21&oe=595E8A26"/>
+                    
+                    <a class = "btn-default" href = "file:///C:/Users/Rose/Documents/Web%20Designs/coollections.html" target="_blank">Learn More</a>
+                </div>
+
+                <div class = "col">
+                    <img src = "https://scontent.fmnl5-1.fna.fbcdn.net/v/t1.0-9/17309295_1261212063968726_1798360305894975813_n.jpg?oh=853b90b5f3cd8aff863df7bd799b27b7&oe=592FE8F2"/>
+                    
+                    <a class = "btn-default" href = "file:///C:/Users/Rose/Documents/Web%20Designs/tabugon.html" target="_blank">Learn More</a>
+                </div> 
+
+
+            </div>
+            <div class="clearfix"></div>
+        </div> 
+    
+<!--======================= end of Portfolio =========================-->
+
+<div id = "contact" class = "contact-form">
+                <div class = "container">
+                        <div class = "col">
+
+                        <h2 class="hr-sect" id="whitey">contact ME</h2>
+
+                             <p id = "write">Please feel free to contact me for any comments, questions, appointments, or qoutes.</p>
+
+                    <form id ="simpleform">
+
+                    <div>
+                        <label for="myName">Name:</label>
+                        <input type="text" required  name="myName" id="myName">
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="text" required  name="email" id="email">
+                        </div>
+
+                    <div>
+                        <label for="comments">Message:</label>
+                        <textarea name = "comments" required id="comments" rows="5" cols="50"> </textarea> 
+                    </div>
+
+                      <div id ="theSubmit">
+                       <button type="submit">Submit</button>
+                        </div>
+
+                    </form>           
+
+        
+                     
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+
+           
+             
+<!--======================= end of contact-form =========================-->
+
+ <div class="footer">
+    <div class="container">
+    <br />
+    <a href="https://www.facebook.com/nelly4java" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/nelly4java" target="_blank" class="fa fa-twitter"></a>
+    <a href="https://www.linkedin.com/in/nelly-rose-aporado-034206119/" target="_blank" class="fa fa-linkedin"></a>
+    <a href="https://github.com/javaGirl0311" target="_blank" class="fa fa-github"></a>
+    <a href="https://gitlab.com/javaGirl03111" target="_blank" class="fa fa-gitlab"></a>
+    <a href="https://bitbucket.org/" target="_blank" class="fa fa-bitbucket"></a>
+    <a href="http://codepen.io/" target="_blank" class="fa fa-codepen"></a>
+    <p>&copy; Nelly Rose toreno Aporado 2017</p> 
+    </div>
+ <div class="clearfix"></div>
+
+ </div>
+  </div>
+
+<!-- ======================= end of Footer =========================-->
+   
+    </body>
+</html>
